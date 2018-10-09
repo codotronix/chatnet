@@ -1,0 +1,600 @@
+body {
+    /*background: orange;*/
+}
+
+.hidden {
+    display: none;
+}
+
+.padding0 {
+    padding: 0;
+}
+
+.paddingXS0 {
+    padding: 0 5px;
+}
+
+.mask {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center;
+    font-size: 30px;
+    color: #FFF;
+    background: rgb(58,100,147);
+    opacity: .8;
+    z-index: 99;
+    display: none;
+}
+
+.mask span {
+    padding: 10px;
+    border: 4px double #FFF;
+    display: inline-block;
+    border-radius: 15px;
+}
+
+.landingPage {
+    text-align: center;
+    /*background: #000;*/
+    background: rgb(58,100,147);
+}
+
+.landingPage .container {
+    min-height: 450px;
+}
+
+.landingPage h1 {
+    margin-bottom: 30px;
+    /*color: #7CB688;*/
+    color: #E8E8E8;
+}
+
+.landingPage .btn {
+    margin: 10px 0;
+    font-size: 20px;
+    height: 40px;
+}
+
+.landingPage .separator {
+    display: block;
+    margin: 20px 0 30px 0;
+}
+
+.landingPage .separator span {
+    font-size: 20px;
+    padding: 15px;
+    border: 1px solid #2e6da4;
+    color: #2e6da4;
+    border-radius: 28px;
+}
+
+.landingPage .secGreet {
+    margin-bottom: 20px;
+}
+
+#greetings { 
+    margin-right: 5px;
+    color: rgb(232,232,232);
+    font-size: 20px;
+}
+
+#signOut a{
+    font-size: 15px;
+    color: #FFF;
+}
+
+#signOut a:hover {
+    color: #EEE;
+}
+
+
+#chatBox {
+    height: 200px;
+    overflow: auto;
+    border: 1px solid rgb(46,109,164);
+}
+
+#goOnline {
+    
+}
+
+.error {
+    border-color: red;
+}
+
+#UserList {
+    padding: 5px;
+    border-top: 3px inset rgba(3, 3, 5, 0.298039);
+    max-height: 235px;
+    overflow: auto;
+}
+
+#UserList li {
+    color: #FFF;
+    /*background-color: rgb(82, 7, 7);
+    border: 3px outset rgb(0, 149, 226);*/
+    background: transparent;
+    border: 3px outset rgb(27, 133, 187);
+    display: block;
+    list-style: none;
+    margin-top: 5px;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 18px;
+    position: relative;
+}
+
+#UserList li:hover {
+    background-color: rgba(26, 34, 90, 0.2);
+    border-color: rgb(105, 114, 181);
+    border-style: inset;
+}
+
+.secUserList {
+    display: none;
+    border-radius: 30px;
+    border: 5px double #FFF;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: 10px
+}
+
+.secUserList h2.title {
+    color: #FFF;
+    margin: 0;
+    /*background: #009;*/
+    background: transparent;
+}
+
+.secUserList h2.title span.fa{
+    top: 4px;
+    right: 40px;
+    position: absolute;
+    font-size: 24px;
+}
+
+.chatWindow {
+    border-radius: 15px;
+    border: 5px double #FFF;
+    overflow: hidden;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.chatWindow .chatTitle {
+    font-size: 18px;
+    color: #FFF;
+    background: rgb(58,100,147);
+    background: transparent;
+    margin: 0;
+    padding: 5px 0;
+    position: relative;
+    /*height: 42px;*/
+}
+
+.chatWindow .chatTitle .users {
+    top: 2px;
+    max-height: 34px;
+    display: inline-block;
+    border: 2px outset rgb(130, 105, 163);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 30px;
+    padding-right: 25px;
+}
+
+.chatWindow .chatTitle .users:hover {
+    border-style: inset;
+}
+
+.chatWindow .chatTitle .users .dropDownArrow {
+    position: absolute;
+    right: 2px;
+    top: 0;
+    font-size: 23px;
+    height: auto;
+    width: auto;
+}
+
+.chatWindow .chatTitle .users .dropDownArrow:hover {    
+    background: none;
+}
+
+.chatWindow .chatTitle .users .groupChatInd {
+    left: 1px;
+    position: absolute;
+    font-size: 20px;
+    display: none;
+}
+
+.chatWindow .chatTitle .leftBtns,
+.chatWindow .chatTitle .rightBtns {
+    padding: 0;
+}
+
+.chatWindow .chatTitle .fa {
+    /*border: 1px solid #892FFA;*/
+    /*border: 1px solid #FFF;*/
+    margin-top: 1px;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    font-size: 25px;
+    /*position: absolute;*/
+}
+
+.chatWindow .chatTitle .fa:hover {
+    background-color: rgba(255, 255, 255, .3);
+}
+
+.chatWindow .chatTitle .icoArrowUpDown {    
+    left: 5px;
+}
+
+.chatWindow .chatTitle .icoAddToChat {
+    padding: 2px 4px;
+    font-size: 22px
+}
+
+.chatWindow .chatTitle .icoCross {
+    padding-top: 1px;
+}
+
+.chatWindow .chatTitle .topDropPanel {
+    top: 39px;
+    width: 100%;
+    padding: 0;
+    right: 0;
+    list-style: none;
+    background: rgb(24, 67, 116);
+    background: rgba(24, 67, 116, .8);
+    position: absolute;
+    display: none;
+    max-height: 200px;
+    overflow: auto;
+}
+
+.chatWindow .chatTitle .topDropPanel li {
+    padding: 7px 0;
+    cursor: pointer;
+    border: 1px solid rgba(174, 174, 232, 0.3);
+}
+
+.chatWindow .chatTitle .topDropPanel li:hover {
+    background: rgba(174, 174, 232, 0.3);
+}
+
+.chatWindow .chatBody {
+    height: 200px;
+    font-size: 17px;
+    margin: 0 40px 0 10px;
+    /*background: #FFF;*/
+    background: rgb(3, 3, 5);
+    background: rgba(3, 3, 5, 0.3);
+    border: 2px inset rgb(54, 55, 134);
+    color: #FFF;
+    text-align: left;
+    padding: 10px;
+    overflow: auto;
+    word-break: break-word;
+}
+
+.chatWindow .chatBody .chatLet {
+    border-radius: 5px;
+    border: 1px solid #FFF;
+    padding: 0px 5px;
+    margin-bottom: 9px;
+}
+
+.chatWindow .chatBody .sender {
+    text-decoration: underline;
+    display: block;
+}
+
+.chatWindow .chatBody .stickerContainer {
+    text-align: center;
+    padding: 5px;
+}
+
+.chatWindow .msgBtnPanel {
+    padding: 1px 10px;
+    position: relative;
+    height: 60px;
+    margin: 2px 0;
+}
+
+.chatWindow .msgBtnPanel .msg {
+    padding-right: 40px;
+    margin: 2px;
+    border-width: 2px;
+    background: transparent;
+    color: #FFF;
+    resize: none;
+    height: 56px;
+}
+
+.chatWindow .msgBtnPanel .send {
+    background-color: rgb(57, 76, 119);
+    border: 4px outset #74749E;
+    color: #FFF;
+    font-size: 30px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px 5px;
+}
+
+.chatWindow .msgBtnPanel .send:hover {
+    border-color: rgb(105, 114, 181);
+    border-style: inset;
+}
+
+.chatWindow .btnRightPanel {
+    width: 40px;
+    height: 204px;
+    top: 40px;
+    right: 0;
+    position: absolute;
+}
+
+.chatWindow .rSoftBtn {
+    right: 2px;
+    position: absolute;
+    border: 2px outset #74749E; /*#7C7CAB*/
+    color: #FFFFFF;
+    padding: 2px;
+    font-size: 28px;
+}
+
+.chatWindow .rSoftBtn:hover {
+    background-color: rgba(26, 34, 90, 0.2);
+    border-color: rgb(105, 114, 181);
+    border-style: inset;
+}
+
+.chatWindow .basicSmiley {
+    bottom: 0;    
+}
+
+.chatWindow .stickersBtn {
+    bottom: 37px;
+    padding: 2px 4px;    
+}
+
+.chatWindow .sidePanel {
+    top: 39px;
+    position: absolute;
+    background-color: rgba(24, 67, 116, .8);
+    height: 200px;
+    width: 100%;
+    margin-right: 40px;
+    right: 0;
+    display: none;
+    overflow: auto;
+}
+
+.chatWindow .basicSmileyPanel li {
+    padding: 3px 7px;
+    color: #FFF;
+    font-size: 20px;
+    display: inline-block;
+    border: 2px outset #74749E;
+    margin: 2px;
+}
+
+.chatWindow .basicSmileyPanel li:hover {
+    border-style: inset;
+}
+
+.chatWindow .stickersBtnPanel li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.chatWindow .stickersBtnPanel li:hover {
+    background: rgba(255,255,255,.3);
+}
+
+footer {
+    display: block;
+    color: #FFF;
+    text-align: center;
+}
+
+.glow {
+    -webkit-animation-name: glowAnimation; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+    animation-name: glowAnimation;
+    animation-duration: 3s;
+    /*animation-iteration-count: 3;*/
+    animation-timing-function: linear;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes glowAnimation {
+    0%   {border-color: red;}    
+    20%  {border-color: White;}   
+    40%  {border-color: red;}   
+    60%  {border-color: White;}    
+    80%  {border-color: red;}    
+    100% {border-color: White;}  
+}
+
+/* Standard syntax */
+@keyframes glowAnimation {
+    0%   {border-color: red;}    
+    20%  {border-color: White;}   
+    40%  {border-color: red;}   
+    60%  {border-color: White;}    
+    80%  {border-color: red;}    
+    100% {border-color: White;}
+}
+
+@media (max-width: 767px) {
+    .landingPage h1 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .paddingXS0{
+        padding: 0;
+    }
+}
+
+
+/******************* ICOMOON STARTS ***********************/
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?-r9wu3w');
+    src:url('../fonts/icomoon.eot?#iefix-r9wu3w') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?-r9wu3w') format('truetype'),
+        url('../fonts/icomoon.woff?-r9wu3w') format('woff'),
+        url('../fonts/icomoon.svg?-r9wu3w#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alarm:before {
+    content: "\e950";
+}
+.icon-bell:before {
+    content: "\e951";
+}
+.icon-wrench:before {
+    content: "\e991";
+}
+.icon-cogs:before {
+    content: "\e995";
+}
+.icon-aid-kit:before {
+    content: "\e998";
+}
+.icon-bug:before {
+    content: "\e999";
+}
+.icon-trophy:before {
+    content: "\e99e";
+}
+.icon-gift:before {
+    content: "\e99f";
+}
+.icon-glass:before {
+    content: "\e9a0";
+}
+.icon-hammer2:before {
+    content: "\e9a8";
+}
+.icon-fire:before {
+    content: "\e9a9";
+}
+.icon-bin:before {
+    content: "\e9ac";
+}
+.icon-briefcase:before {
+    content: "\e9ae";
+}
+.icon-airplane:before {
+    content: "\e9af";
+}
+.icon-truck:before {
+    content: "\e9b0";
+}
+.icon-power:before {
+    content: "\e9b5";
+}
+.icon-flag:before {
+    content: "\e9cc";
+}
+.icon-sun:before {
+    content: "\e9d4";
+}
+.icon-star-half:before {
+    content: "\e9d8";
+}
+.icon-star-full:before {
+    content: "\e9d9";
+}
+.icon-heart:before {
+    content: "\e9da";
+}
+.icon-heart-broken:before {
+    content: "\e9db";
+}
+.icon-happy:before {
+    content: "\e9df";
+}
+.icon-smile:before {
+    content: "\e9e1";
+}
+.icon-tongue:before {
+    content: "\e9e3";
+}
+.icon-sad:before {
+    content: "\e9e5";
+}
+.icon-wink:before {
+    content: "\e9e7";
+}
+.icon-grin:before {
+    content: "\e9e9";
+}
+.icon-cool:before {
+    content: "\e9eb";
+}
+.icon-angry:before {
+    content: "\e9ed";
+}
+.icon-evil:before {
+    content: "\e9ef";
+}
+.icon-shocked:before {
+    content: "\e9f1";
+}
+.icon-baffled:before {
+    content: "\e9f3";
+}
+.icon-confused:before {
+    content: "\e9f5";
+}
+.icon-neutral:before {
+    content: "\e9f7";
+}
+.icon-hipster:before {
+    content: "\e9f9";
+}
+.icon-wondering:before {
+    content: "\e9fb";
+}
+.icon-sleepy:before {
+    content: "\e9fd";
+}
+.icon-frustrated:before {
+    content: "\e9ff";
+}
+.icon-crying:before {
+    content: "\ea01";
+}
+.icon-cross:before {
+    content: "\ea0f";
+}
+.icon-checkmark:before {
+    content: "\ea10";
+}
+/******************* ICOMOON ENDS ************************/
